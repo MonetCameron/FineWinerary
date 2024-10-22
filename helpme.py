@@ -6,13 +6,13 @@ from PIL import Image
 import math 
 
 def home_page():
-    st.title("Welcome to Fine Winerary - the Wine Selection App")
-    st.header("This app helps you find the perfect wine to pass the time.")
-    st.subheader("Use the navigation menu to access the survey and get personalized recommendations.")
-
     image_path = 'file:///Users/monetcameron/Desktop/1674384291032.jpg'  # Replace with your image path
     image = Image.open(image_path)
     st.image(image, caption='This is a local image.', use_column_width=True)
+
+    st.title("Welcome to Fine Winerary - the Wine Selection App")
+    st.header("This app helps you find the perfect wine to pass the time.")
+    st.subheader("Use the navigation menu to access the survey and get personalized recommendations.")
 
 # Define the survey page function
 def survey_page():
