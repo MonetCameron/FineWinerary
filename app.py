@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd 
+import seaborn as sns
 import plotly.express as px
 from sklearn.preprocessing import LabelEncoder
 from imblearn.over_sampling import SMOTE
