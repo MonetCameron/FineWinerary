@@ -34,7 +34,7 @@ def home_page():
     We offer personalized recommendations based on what you're looking for. 
     Whether you're pairing a wine with your dinner or simply enjoying a glass, we've got you covered!
     """)
-    st.image("IMG_0122.jpeg", caption="Discover the perfect wine", use_column_width=True)
+    st.image("IMG_0122.jpeg", caption="Discover the perfect wine", use_container_width=True)
 
     
 
@@ -43,7 +43,7 @@ def explain_data():
     import streamlit as st
 
     # Display an image banner
-    st.image("glasses-different-wines-placed_961875-161431.jpg", use_column_width=True)
+    st.image("glasses-different-wines-placed_961875-161431.jpg", use_container_width=True)
 
     st.title("Understanding the Data 📊")
     st.write("""
@@ -173,7 +173,7 @@ def explain_data():
 # Data Exploration (Page 3)
 def data_exploration():
     st.title("Data Exploration 🔍")
-    st.image("row-glasses-with-wine_186277-5583.jpg", use_column_width=True)
+    st.image("row-glasses-with-wine_186277-5583.jpg", use_container_width=True)
     st.write("""
     Let's explore the data to understand its structure, quality, and distributions.
     This page walks you through the initial data loading, type distribution, and handling of missing values.
@@ -294,7 +294,7 @@ st.write(wine_df[['type', 'encoded_type']].head())  # Displaying the encoded win
 # Data Manipulation (Page 4)
 def data_manipulation():
     st.title("Data Manipulation and Preprocessing 🛠️")
-    st.image("istockphoto-1196065656-612x612.jpg", use_column_width=True)
+    st.image("istockphoto-1196065656-612x612.jpg", use_container_width=True)
     st.write("""
     This page demonstrates the data cleaning and preprocessing pipeline. Each step refines the dataset for better insight into the 
     relationships between wine quality, type, sweetness, and other features. The goal is to create a dataset that enables building 
@@ -459,7 +459,7 @@ def data_manipulation():
 #EDA: PAGE 5
 def exploratory_data_analysis():
     st.title("Exploratory Data Analysis 📊")
-    st.image("images.jpg", use_column_width=True)
+    st.image("images.jpg", use_container_width=True)
     st.write("""
     After cleaning and balancing the data, we can now dive into its characteristics through visualizations. 
     This helps uncover patterns and correlations vital for building predictive models.
@@ -562,7 +562,7 @@ def classify_wine(row):
 # Predictive Modeling
 def predictive_modeling():
     st.title("Predictive Modeling 🤖")
-    st.image("Red-Wine-Rosacea-the-sunday-edit-1.jpg", use_column_width=True)
+    st.image("Red-Wine-Rosacea-the-sunday-edit-1.jpg", use_container_width=True)
     
     if 'wine_balanced' in st.session_state:
         wine_balanced = st.session_state.wine_balanced
@@ -773,8 +773,8 @@ def survey_page():
 
         st.write("**Off-dry falls between bone dry and dry**")
 
-        st.image("wine-sweetness-chart-red-wines-2.jpeg", caption="Red Wines Reference Chart", use_column_width=True)
-        st.image("wine-sweetness-chart-white-wines.jpeg", caption="White Wines Reference Chart", use_column_width=True)
+        st.image("wine-sweetness-chart-red-wines-2.jpeg", caption="Red Wines Reference Chart", use_container_width=True)
+        st.image("wine-sweetness-chart-white-wines.jpeg", caption="White Wines Reference Chart", use_container_width=True)
 
         # # A graph for better visualization
         # fig = px.scatter(
