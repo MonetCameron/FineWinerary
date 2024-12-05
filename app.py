@@ -8,7 +8,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.decomposition import PCA
 from sklearn.cluster import KMeans
-import matplotlib.pylot as plt
+import matplotlib.pyplot as plt
 
 # Helper function for visualizations
 def plot_heatmap(dataframe, title="Heatmap", cmap="YlOrBr"):
